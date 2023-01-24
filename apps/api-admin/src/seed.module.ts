@@ -41,9 +41,9 @@ export class SeedService {
       const filePath = '/config.example';
       const value = await fs.readFileSync(join(__dirname, filePath), 'utf-8');
       await this.config.init();
-      // await this.config.set(consulKey, value)
+      await this.config.set(consulKey, value)
     }
-    // console.log(hasConfig);
+    console.log(hasConfig);
   }
 
   private consulConfigProd() {

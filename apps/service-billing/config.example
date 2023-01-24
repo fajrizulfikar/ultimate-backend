@@ -25,6 +25,6 @@ database:
     tcpProtocol: tcp
 
   redis:
-    host: "localhost"
+    host: "redis"
     port: "6379"
     password: ""
